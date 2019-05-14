@@ -10,15 +10,18 @@ Material necesario:
 
 
 Pasos a seguir:
+
   (01) Insertar la tarjeta MicroSD en el ordenador
 
   (02) Verificar el nombre de la tarjeta:
     En la Terminal:
+    
       lsblk
         - Nota: Apunta el nombre de la MicroSD Card (Creo que el nombre para MicroSD no puede ser sda o sr0),
                 Asumiremos que el nombre es CARD_NAME (i.e. ''mmcblk0')
 
   (03) Instalar Sistema Operativo:
+  
     Si usas un fichero .zip sin descomprimir usa el comando:
       En la Terminal:
         unzip -p <ZIP_FILE> | sudo dd of=/dev/<CARD_NAME> bs=4M conv=fsync
