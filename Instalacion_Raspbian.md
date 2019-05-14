@@ -24,18 +24,20 @@ Pasos a seguir:
   
     Si usas un fichero .zip sin descomprimir:
      
-        unzip -p <ZIP_FILE> | sudo dd of=/dev/<CARD_NAME> bs=4M conv=fsync
+        unzip -p <ZIP_FILE> | sudo dd of=/dev/<CARD_NAME> bs=4M status=progress conv=fsync
       i.e.:
 
         unzip -p 2018-06-27-raspbian-stretch-lite.zip | sudo dd of=/dev/mmcblk0 bs=4M status=progress conv=fsync
 
     Si usas un fichero .img usa el comando:
 
-        dd bs=4M if=<IMAGE_FILE> of=/dev/<CARD_NAME> conv=fsync
+        dd bs=4M if=<IMAGE_FILE> of=/dev/<CARD_NAME> status=progress conv=fsync
 
       i.e.:
       
         sudo dd bs=4M if=2018-06-27-raspbian-stretch-lite.img of=/dev/mmcblk0 status=progress conv=fsync
+
+    - Nota: 'status=progress' muestra el progreso de la instalación. Si no se incluye el comando funcionará también pero no veremos el progreso
 
 
 Ref_01: https://www.raspberrypi.org/downloads/
