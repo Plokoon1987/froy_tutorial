@@ -6,6 +6,7 @@ Material necesario:
   - MicroSD Card
   - Sistema Operativo Raspbian (ver Ref_01)
     - Nota: Verifica la veracidad del archivo bajado con 'sha256sum'.
+    
             i.e.: sha256sum <IMAGE_FILE> or sha256sum <ZIP_FILE>
 
 
