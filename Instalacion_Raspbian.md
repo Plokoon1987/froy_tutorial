@@ -25,6 +25,7 @@ Este manual describe cómo instalar el Sistema Operativo "Raspbian" en una tarje
     Si usas un fichero .zip sin descomprimir:
      
     `unzip -p <ZIP_FILE> | sudo dd of=/dev/<CARD_NAME> bs=4M status=progress conv=fsync`
+
     i.e.:
 
     `unzip -p 2018-06-27-raspbian-stretch-lite.zip | sudo dd of=/dev/mmcblk0 bs=4M status=progress conv=fsync`
