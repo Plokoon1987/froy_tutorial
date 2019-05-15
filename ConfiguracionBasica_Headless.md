@@ -12,10 +12,11 @@ y habilitar el acceso remoto a ellos.
   
     Accede al archivo wpa_suplicant con el editor "Nano" usando:
 
-    `sudo nano /media/froylan/rootfs/etc/wpa_supplicant/wpa_supplicant.conf`
+    `sudo nano /media/<USERNAME>/rootfs/etc/wpa_supplicant/wpa_supplicant.conf`
 
+    - Nota: ¡Ojo! Reemplazar en el comando anterior `<USERNAME>` por el nombre del usuario realizando la configuración
 
-     Dirígete a la parte inferior del documento y añade lo siquiente:
+    Dirígete a la parte inferior del documento y añade lo siquiente:
      <pre>
      network={
          ssid="Network_SSID"
@@ -24,13 +25,13 @@ y habilitar el acceso remoto a ellos.
      </pre>
 
     - Nota: Para guardar y salir de "nano" pulsa <kbd>Ctrl</kbd>+<kbd>x</kbd>. A continuación pulsa <kbd>y</kbd>
-            para confirmar y <kbd>Enter</kbd> para guardar 
+            para confirmar y <kbd>Enter</kbd> para guardar
 
   - Habilita Acceso remoto mediante SSH:
   
     Crea un archivo vacío dentro de la carpeta "boot" llamado "ssh"
 
-    `sudo touch /media/froylan/boot/ssh`
+    `sudo touch /media/<USERNAME>/boot/ssh`
 
 
 ## Referencias:
