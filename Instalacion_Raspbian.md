@@ -46,7 +46,7 @@ Ref_02: https://www.raspberrypi.org/documentation/installation/installing-images
 
 ## NOTAS:
 
-NOTA1: Verificar la veracidad del archivo sirve para asegurarse que el archivo bajado no ha sido manipulado por terceros
+NOTA_1: Verificar la veracidad del archivo sirve para asegurarse que el archivo bajado no ha sido manipulado por terceros
        (Ya que algunos distribuidores no oficiales podrían haber manipulado el archivo) y/o que no es un archivo corrupto.
 
   - En la página de de descarga de Raspbian el distribuidor muestra el Número SHA-256 que el archivo descargado debería
