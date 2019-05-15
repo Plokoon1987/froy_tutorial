@@ -5,10 +5,7 @@ Este manual describe cómo instalar el Sistema Operativo "Raspbian" en una tarje
 ## Material necesario:
   - MicroSD Card
   - Sistema Operativo Raspbian (ver Ref_01)
-    - Nota: Verifica la veracidad del archivo bajado con 'sha256sum'.
-    
-            i.e.: sha256sum <IMAGE_FILE> or sha256sum <ZIP_FILE>
-
+    - Nota: Verifica la veracidad del archivo bajado con 'sha256sum'. (Ver NOTA_1)
 
 ## Pasos a seguir:
 
@@ -41,6 +38,24 @@ Este manual describe cómo instalar el Sistema Operativo "Raspbian" en una tarje
     - Nota: 'status=progress' muestra el progreso de la instalación. Si no se incluye el comando funcionará también pero no veremos el progreso
 
 
+## REFERENCIAS:
+
 Ref_01: https://www.raspberrypi.org/downloads/
 
 Ref_02: https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
+## NOTAS:
+
+NOTA1: Verificar la veracidad del archivo sirve para asegurarse que el archivo bajado no ha sido manipulado por terceros
+       (Ya que algunos distribuidores no oficiales podrían haber manipulado el archivo) y/o que no es un archivo corrupto.
+
+  - En la página de de descarga de Raspbian el distribuidor muestra el Número SHA-256 que el archivo descargado debería
+    tener
+
+  - Una vez el archivo se ha descargado se debería comprobar que su número SHA-256 es igual al expuesto en la web.
+
+    `sha256sum <IMAGE_FILE> or sha256sum <ZIP_FILE>`
+
+    i.e.:
+
+    `sha256sum 2018-06-27-raspbian-stretch-lite.img`
