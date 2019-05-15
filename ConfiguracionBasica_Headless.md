@@ -33,6 +33,7 @@ y habilitar el acceso remoto a ellos.
 
     `sudo touch /media/<USERNAME>/boot/ssh`
 
+    - Nota: ¡Ojo! Reemplazar en el comando anterior `<USERNAME>` por el nombre del usuario realizando la configuración
 
 ## Referencias:
 Ref_01: https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
