@@ -35,6 +35,8 @@ y habilitar el acceso remoto a ellos.
 
     - Nota: ¡Ojo! Reemplazar en el comando anterior `<USERNAME>` por el nombre del usuario realizando la configuración
 
+  - Inserta la tarjeta MicroSD en la Raspberry Pi y encidelá. Debería conectarse automáticamente a la Red Local asignada.
+
 ## Referencias:
 Ref_01: https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
 
